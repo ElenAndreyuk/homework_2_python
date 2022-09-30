@@ -13,13 +13,13 @@ print(list_n)
 result = 1
 
 data = open('file.txt', 'r')
-# temp = data.read().split("\n")
-# print(temp)
+temp_list = data.readlines()
+print(temp_list)
+
 for line in data:
-    temp = [data.read().split("\n")]
+    temp =int( line)
     print(temp)
-    for j in temp:
-        result *= int(j)
+    result *= list_n[temp]
 data.close()    
 print(result)    
 
